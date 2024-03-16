@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>HTML CSS</title>
-    <link ref="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="header">
@@ -23,13 +23,15 @@
   </div>
   <section id="a_propos">
     <h2>A propos de nous</h2>
+   <div class="about_countainer">
     <div class="about_image">
-        <img src="asets/images (1).jpg" alt="image de notre hotel">
-    </div>
-    <div class="about_text">
-        <p>bienvenue a l'hotel full stack un lieu de detente ultime au coeur de la nature.
-         profitez de nos chambre luxueuses et de notres service exceptionel pour des vacances inoubliables</p>
-    </div>
+      <img src="asets/images (1).jpg" alt="image de notre hotel">
+  </div>
+  <div class="about_text">
+      <p>bienvenue a l'hotel full stack un lieu de detente ultime au coeur de la nature.
+       profitez de nos chambre luxueuses et de notres service exceptionel pour des vacances inoubliables</p>
+  </div>
+   </div>
   </section>
   <section id="nos_services">
     <h2> nos services</h2>
@@ -42,5 +44,31 @@
         </div>
     </div>
   </section>
+  <section id="contact">
+    <h2>contactez nous</h2>
+    <form action="#" method="POST">
+     <label for="name">name:</label>
+     <input type="text" id="name" placeholder="entre votre nom complet"><br>
+     <br>
+     <label for="email">email:</label>
+     <input type="email" id="email" placeholder="entrez votre email"><br>
+     <br>
+     <label for="numero">numero:</label>
+     <input type="number" id="numero" placeholder="entrez votre numero de telephone"><br>
+     <br>
+     <label for="message">message:</label>
+     <textarea id="message" placeholder="entrez votre text" rows="6" cols="50"></textarea><br>
+     <br>
+     <label for="sexe">sexe:</label><br>
+     <input type="radio" id="homme" value="homme" name="sexe">
+     <label for="homme">homme</label>
+     <input type="radio" id="femme" value="femme" name="sexe">
+     <label for="femme">femme</label>
+     <input type="submit" value="envoyer">
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2024 mon hotel tout droit réservé</p>
+  </footer>
 </body>
 </html>
