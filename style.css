@@ -64,3 +64,51 @@ h2{
     width: 100%;
     height: auto;
 }
+form{
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: darkgray;
+    padding: 60px;
+    border: 1px solid black;
+    box-shadow: 5px 3px 2px black;
+    border-radius: 10px;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input[type="text"],input[type="email"],input[type="tel"],input[type="textarea"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    font-size: 16px;
+}
+input[type="radio"]{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.rad{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+input[type="submit"]{
+    padding: 16px 32px;
+    margin:  0 auto;
+    width: 50%;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border-color: white;
+    display: flex;
+    justify-content: center;
+}
+footer{
+    background-color: black;
+    margin: 0 auto;
+    color: white;
+}
